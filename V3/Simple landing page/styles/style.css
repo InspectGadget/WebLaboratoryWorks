@@ -1,0 +1,8 @@
+@import "header.css";
+@import "hero.css";
+
+.container{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}

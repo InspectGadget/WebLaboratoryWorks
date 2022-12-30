@@ -1,0 +1,37 @@
+.hero__content{
+    margin: auto 0;
+}
+.hero-block{
+    display: flex;
+    padding: 100px 0;
+    justify-content: space-between;
+}
+.hero__title{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000000;
+}
+.hero__description{
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: #7D7987;
+    max-width: 450px;
+}
+.hero__button{
+    width: 164px;
+    height: 48px;
+    color: #ffffff;
+    background: #FB8F1D;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
