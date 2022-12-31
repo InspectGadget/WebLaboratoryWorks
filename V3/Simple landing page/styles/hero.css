@@ -22,6 +22,8 @@
     line-height: 30px;
     color: #7D7987;
     max-width: 450px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 .hero__button{
     width: 164px;
