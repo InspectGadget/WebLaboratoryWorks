@@ -13,7 +13,7 @@
 .navbar__link {
     display: inline;
     text-align: center;
-    padding: 14px 12px;
+    padding: 0 1em;
 }
 
 .navbar__link a {
