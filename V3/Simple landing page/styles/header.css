@@ -1,17 +1,22 @@
-.navbar{
+.navbar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 115px;
 }
-.navbar__links{
+
+.navbar__menu {
     list-style-type: none;
     margin: auto 0;
     padding: 0;
 }
-.navbar__link{
+
+.navbar__link {
     display: inline;
     text-align: center;
     padding: 14px 12px;
+}
+
+.navbar__link a {
     color: #B8BECD;
     text-decoration: none;
     font-family: 'Inter';
@@ -20,24 +25,30 @@
     font-size: 16px;
     line-height: 19px;
 }
-.navbar__link_active{
+
+.navbar__link_active a {
     font-weight: 500;
     color: #202336;
 }
-.navbar__link:first-child{
+
+.navbar__link:first-child {
     padding-left: 0;
 }
-.navbar__link:last-child{
+
+.navbar__link:last-child {
     padding-right: 0;
 }
-.navbar__logo{
+
+.navbar__logo {
     margin: auto;
 }
-.navbar__buttons{
+
+.navbar__buttons {
     margin: auto 0;
     justify-self: end;
 }
-.navbar__button{
+
+.navbar__button {
     width: 132px;
     height: 44px;
     border-radius: 8px;
@@ -46,12 +57,17 @@
     font-weight: 500;
     font-size: 15px;
 }
-.navbar__button_empty{
+.navbar__button:first-child{
+    margin-right: 1em;
+}
+
+.navbar__button_empty {
     border: 1px solid #FB8F1D;
     background: #ffffff;
     color: #FB8F1D;
 }
-.navbar__button_filled{
+
+.navbar__button_filled {
     background: #FB8F1D;
     color: #FFFFFF;
     border: none;

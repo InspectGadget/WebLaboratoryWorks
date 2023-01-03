@@ -1,7 +1,8 @@
-.testimonials{
+.testimonials {
     background: #F8F8F8;
 }
-.testimonials-block{
+
+.testimonials-block {
     display: flex;
     padding: 40px 0;
     justify-content: space-between;
@@ -9,7 +10,8 @@
     max-width: 1050px;
     margin: auto;
 }
-.testimonials__title{
+
+.testimonials__title {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
@@ -18,22 +20,28 @@
     width: 100%;
     padding-bottom: 3em;
 }
+
 .checked {
     color: #FFBB0C;
 }
-.testimonials__rating{
+
+.testimonials__rating {
     font-size: 23px;
 }
-.testimonials__rating span{
+
+.testimonials__rating span {
     padding-right: 5px;
 }
-.testimonials__image{
+
+.testimonials__image {
     padding-top: 9em;
 }
-.testimonials__image img{
+
+.testimonials__image img {
     border-radius: 14px;
 }
-.testimonials__comment{
+
+.testimonials__comment {
     max-width: 450px;
     font-family: 'Muli';
     font-style: normal;
@@ -41,14 +49,16 @@
     font-size: 24px;
     line-height: 36px;
 }
-.testimonials__name{
+
+.testimonials__name {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 48px;
 }
-.testimonials__position{
+
+.testimonials__position {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;

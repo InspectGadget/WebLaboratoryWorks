@@ -1,12 +1,14 @@
-.hero__content{
+.hero__content {
     margin: auto 0;
 }
-.hero-block{
+
+.hero-block {
     display: flex;
     padding: 100px 0;
     justify-content: space-between;
 }
-.hero__title{
+
+.hero__title {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 700;
@@ -14,7 +16,8 @@
     line-height: 50px;
     color: #000000;
 }
-.hero__description{
+
+.hero__description {
     font-family: 'Muli';
     font-style: normal;
     font-weight: 300;
@@ -25,7 +28,8 @@
     padding-top: 20px;
     padding-bottom: 30px;
 }
-.hero__button{
+
+.hero__button {
     width: 164px;
     height: 48px;
     color: #ffffff;

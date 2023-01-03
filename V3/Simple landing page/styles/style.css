@@ -1,6 +1,8 @@
 @import "header.css";
 @import "hero.css";
 @import "testimonials.css";
+@import "stories.css";
+@import "footer.css";
 
 .container{
     max-width: 1200px;

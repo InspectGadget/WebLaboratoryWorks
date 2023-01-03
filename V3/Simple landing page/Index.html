@@ -1,73 +1,149 @@
 <!DOCTYPE html>
 <html>
-    <Head>
-        <link rel="stylesheet" href="styles/style.css">
-        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </Head>
+<Head>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
 
-    <body>
-        <header>
-            <div class="container">
-                <div class="navbar">
-                    <ul class="navbar__links">
-                        <li class="navbar__link navbar__link_active">Home</li>
-                        <li class="navbar__link">Destinations</li>
-                        <li class="navbar__link">About</li>
-                        <li class="navbar__link">Partner</li>
-                    </ul>
-                    <div class="navbar__logo">
-                        <img src="images/logo.svg" alt="">
-                    </div>
-                    <div class="navbar__buttons">
-                        <button class="navbar__button navbar__button_empty">Login</button>
-                        <button class="navbar__button navbar__button_filled">Register</button>
-                    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</Head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <ul class="navbar__menu">
+                    <li class="navbar__link navbar__link_active"><a href="#">Home</a></li>
+                    <li class="navbar__link"><a href="#">Destinations</a></li>
+                    <li class="navbar__link"><a href="#">About</a></li>
+                    <li class="navbar__link"><a href="#">Partner</a></li>
+                </ul>
+                <div class="navbar__logo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <div class="navbar__buttons">
+                    <button class="navbar__button navbar__button_empty">Login</button>
+                    <button class="navbar__button navbar__button_filled">Register</button>
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <section class="hero">
-            <div class="container">
-                <div class="hero-block">
-                    <div class="hero__content">
-                        <div class="hero__title">Guides by Thousand<br>Sunny</div>
-                        <div class="hero__description">Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.</div>
-                        <button class="hero__button">Download</button>
-                    </div>
-                    <div class="hero__image">
-                        <img src="images/Thousand-03.png" alt="">
-                    </div>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-block">
+                <div class="hero__content">
+                    <h3 class="hero__title">Guides by Thousand<br>Sunny</h3>
+                    <p class="hero__description">Packed with tips and advice from our on-the-ground experts, our city
+                        guides app (iOS and Android) is the ultimate resource before and during a trip.</p>
+                    <button class="hero__button">Download</button>
+                </div>
+                <div class="hero__image">
+                    <img src="images/Thousand-03.png" alt="">
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="testimonials">
-            <div class="container">
-                <div class="testimonials-block">
-                    <div class="testimonials-content">
-                        <h2 class="testimonials__title">Testimonials</h2>
-                        <div class="testimonials__rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials-block">
+                <div class="testimonials-content">
+                    <h2 class="testimonials__title">Testimonials</h2>
+                    <div class="testimonials__rating">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <p class="testimonials__comment">“Quisque in lacus a urna fermentum euismod. Integer mi nibh,
+                        dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”</p>
+                    <div class="testimonials__credentials">
+                        <p class="testimonials__name">Edward Newgate</p>
+                        <p class="testimonials__position">Founder Circle</p>
+                    </div>
+                </div>
+                <div class="testimonials__image">
+                    <img src="images/image 6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stories">
+        <div class="container">
+            <div class="stories-block">
+                <div class="stories-header">
+                    <h2 class="stories-header__title">Trending stories</h2>
+                    <a class="stories-header__link" href="">View all ></a>
+                </div>
+                <div class="stories-content">
+                    <div class="storie">
+                        <div class="storie__image">
+                            <img src="images/image 12.png" alt="">
                         </div>
-                        <p class="testimonials__comment">“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”</p>
-                        <div class="testimonials__credentials">
-                            <p class="testimonials__name">Edward Newgate</p>
-                            <p class="testimonials__position">Founder Circle</p>
-                        </div>
+                        <h3 class="storie__title">The many benefits of taking a healing holiday</h3>
+                        <p class="storie__description">‘Helaing holidays’ are on the rise tohelp maximise your health
+                            and happines...</p>
+                        <a class="storie__link" href="">Read more</a>
                     </div>
-                    <div class="testimonials__image">
-                        <img src="images/image 6.png" alt="">
+                    <div class="storie">
+                        <div class="storie__image">
+                            <img src="images/image 13.png" alt="">
+                        </div>
+                        <h3 class="storie__title">The best Kyoto restaurant to try Japanese food</h3>
+                        <p class="storie__description">From tofu to teahouses, here’s our guide to Kyoto’s best
+                            restaurants to visit...</p>
+                        <a class="storie__link" href="">Read more</a>
+                    </div>
+                    <div class="storie">
+                        <div class="storie__image">
+                            <img src="images/image 14.png" alt="">
+                        </div>
+                        <h3 class="storie__title">Skip Chichen Itza and head to this remote Yucatan</h3>
+                        <p class="storie__description">It’s remote and challenging to get, but braving the jungle and
+                            exploring these ruins without the...</p>
+                        <a class="storie__link" href="">Read more</a>
+                    </div>
+                    <div class="storie">
+                        <div class="storie__image">
+                            <img src="images/image 15.png" alt="">
+                        </div>
+                        <h3 class="storie__title">Surf’s up at these beginner spots around the world</h3>
+                        <p class="storie__description">If learning to surf has in on your to-do list for a while, the
+                            good news is: it’s never too late...</p>
+                        <a class="storie__link" href="">Read more</a>
                     </div>
                 </div>
             </div>
-        </section>
-    </body>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-block">
+                <div class="footer__logo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <h6 class="fooret__copyright">©2020 Thousand Sunny. All rights reserved</h6>
+            </div>
+            <hr class="footer__line">
+            <div class="footer-social">
+                <ul class="footer__menu">
+                    <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
 </html>
