@@ -1,0 +1,129 @@
+.testimonials {
+    background-color: #F3F8FE;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.testimonials-block {
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.testimonials__title {
+    color: #FFF;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    font-size: 2.2rem;
+}
+
+.testimonials__line {
+    background-color: #fff;
+}
+
+.testimonials-content {
+    display: flex;
+    align-items: center;
+    padding: 60px 120px 90px 120px;
+}
+
+.testimonials-person__image img {
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.testimonials-person {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.testimonials-person__credentials {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.testimonials-person__name {
+    color: #fff;
+    font-size: 20px;
+}
+
+.testimonials-person__position {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.testimonials__comment {
+    text-align: left;
+    max-width: 390px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.testimonials-controlls {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.testimonials-controlls__dots {
+    display: inline-block;
+    vertical-align: super;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #5B9BF3;
+    opacity: 0.3;
+    border-radius: 50%;
+    display: inline-block;
+    
+}
+.dot:not(:last-child){
+    margin-right: 18px;
+}
+.dot_active{
+    opacity: 1;
+}
+.testimonials-controlls__arrow{
+    font-size: 30px;
+    color: #5B9BF3;
+    opacity: 0.3;
+}
+.testimonials-controlls__arrow_active{
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px){
+    .testimonials{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .testimonials-content{
+        flex-direction: column;
+    }
+    .testimonials-person{
+        width: auto;
+        flex-direction: column;
+    }
+    .testimonials-person__credentials{
+        text-align: center;
+        padding-left: 0;
+    }
+    .testimonials__comment{
+        padding-top: 20px;
+        text-align: center;
+    }
+    .testimonials-controlls{
+        padding-top: 20px;
+    }
+    .testimonials-controlls__arrow{
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .testimonials-content{
+        padding: 25px;
+    }
+}

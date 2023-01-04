@@ -1,0 +1,53 @@
+/* Button on hover filling animation */
+.button {
+    transition: background-color 1s;
+}
+
+.button:hover {
+    background-color: #458FF6;
+    color: #fff;
+}
+
+/* Nav links on hover animation */
+.header-menu__link {
+    position: relative;
+    transition: -webkit-clip-path 275ms ease;
+    transition: clip-path 275ms ease;
+    transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+}
+
+.header-menu__link:hover span::before,
+.header-menu__link:focus span::before {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.header-menu__link span {
+    position: relative;
+    display: inline-block;
+    color: #7D7987;
+}
+
+.header-menu__link span::before {
+    position: absolute;
+    content: attr(data-content);
+    color: #458FF6;
+    text-decoration: underline;
+    -webkit-text-decoration-color: #458FF6;
+    text-decoration-color: #458FF6;
+    -webkit-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    transition: -webkit-clip-path 275ms ease;
+    transition: clip-path 275ms ease;
+    transition: clip-path 275ms ease, -webkit-clip-path 275ms ease;
+}
+
+/* Article card hover animanion */
+.article:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 10px 40px 50px rgba(69, 143, 246, 0.5);
+}
+
+.article {
+    transition: all 0.3s ease-out;
+}

@@ -9,7 +9,6 @@
 .stories-header__title {
     display: inline-block;
     font-family: 'Playfair Display';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 50px;
@@ -19,7 +18,6 @@
     margin: auto 0;
     color: #FB8F1D;
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 17px;
     line-height: 60px;
@@ -42,7 +40,6 @@
 
 .storie__title {
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 19px;
     line-height: 30px;
@@ -51,8 +48,6 @@
 .storie__description {
     color: #7D7987;
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 15px;
     line-height: 26px;
 }
@@ -61,7 +56,6 @@
     color: #FB8F1D;
     text-decoration: none;
     font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 28px;
