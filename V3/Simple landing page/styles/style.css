@@ -3,6 +3,8 @@
 @import "testimonials.css";
 @import "stories.css";
 @import "footer.css";
+@import "animations.css";
+@import "responsive.css";
 
 .container{
     max-width: 1200px;

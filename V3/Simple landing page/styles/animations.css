@@ -1,0 +1,36 @@
+/* Navbar menu on hover text fill animation */
+.navbar__link:not(.navbar__link_active,.navbar__link_mobile) a {
+    overflow: hidden;
+    background: linear-gradient(to right, #FB8F1D, #FB8F1D 50%, #B8BECD 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+.navbar__link a:hover {
+    background-position: 0 100%;
+}
+
+/* Buttons shadow on hover */
+button{
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+button:hover{
+    -moz-box-shadow: 0px 0px 4px 1px grey;
+    -webkit-box-shadow: 0px 0px 4px 1px grey;
+    box-shadow: 0px 0px 4px 1px  grey;
+}
+
+/* Footer social media icons animation */
+.icon {
+    transition: .5s;
+}
+
+.footer__menu li a:hover .icon {
+    transform: rotateY(360deg);
+    color: #FB8F1D;
+}
