@@ -1,0 +1,41 @@
+.hero {
+    background-image: url(../images/Bitmap.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 124px;
+    padding-bottom: 60%;
+}
+
+.hero__lable {
+    color: #fff;
+    font-weight: 500;
+    opacity: 0.8;
+    font-size: 1rem;
+    padding-bottom: 12px;
+}
+
+.hero__title {
+    max-width: 440px;
+}
+
+.hero-watch{
+    display: flex;
+    align-items: center;
+}
+
+.hero-watch__lable {
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.75rem;
+}
+@media screen and (max-width: 768px) {
+    .hero__title{
+        text-align: left;
+    }
+}

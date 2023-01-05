@@ -1,0 +1,27 @@
+.materials-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.materials__title{
+    color: #222F33;
+}
+.materials__description{
+    max-width: 400px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.materials__button{
+    border: 1px solid #646D70;
+    border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+    .materials-block{
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .materials__button{
+        margin-bottom: 30px;
+    }
+}

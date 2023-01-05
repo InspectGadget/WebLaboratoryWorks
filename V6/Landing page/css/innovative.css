@@ -1,0 +1,26 @@
+.innovative{
+    background-color: #26353B;
+}
+.innovative__title{
+    padding-top: 66px;
+    padding-bottom: 11px;
+}
+.innovative-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 78px;
+}
+.innovative-content p{
+    max-width: 380px;
+    color: #fff;
+    opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+    .innovative-content{
+        flex-direction: column;
+    }
+    .innovative-content p:first-child{
+        padding-bottom: 15px;
+    }
+}
