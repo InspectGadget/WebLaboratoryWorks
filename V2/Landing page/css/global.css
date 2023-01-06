@@ -1,0 +1,56 @@
+body {
+    background: #fff;
+    font-family: 'Inter';
+}
+
+a {
+    text-decoration: none;
+    color: #505f98;
+}
+
+button {
+    border: 0;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.title {
+    font-family: 'Playfair Display';
+    font-size: 2.25rem;
+    color: #202336;
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        text-align: center;
+    }
+}
+@media screen and (max-width:1024px) {
+    .container {
+        padding: 0 40px;
+    }
+}

@@ -1,6 +1,6 @@
 .navbar {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 1fr 3fr;
     height: 115px;
 }
 
@@ -13,7 +13,9 @@
 .navbar__link {
     display: inline;
     text-align: center;
-    padding: 0 1em;
+}
+.navbar__link:not(:last-child){
+    padding-right: 34px;
 }
 
 .navbar__link a {
@@ -27,14 +29,6 @@
 .navbar__link_active a {
     font-weight: 500;
     color: #202336;
-}
-
-.navbar__link:first-child {
-    padding-left: 0;
-}
-
-.navbar__link:last-child {
-    padding-right: 0;
 }
 
 .navbar__logo {

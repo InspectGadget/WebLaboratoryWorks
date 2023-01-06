@@ -1,0 +1,82 @@
+.destination-block {
+    padding-top: 160px;
+    padding-bottom: 140px;
+}
+
+.destination-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 55px;
+}
+
+.destination-header__title {
+    font-weight: 700;
+    font-size: 36px;
+    color: #000;
+}
+
+.destination-header__link {
+    font-weight: 600;
+    font-size: 1.0625rem;
+    color: #FB8F1D;
+}
+
+.destination-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    background-image: url("../images/image\ 4.png");
+    background-repeat: no-repeat;
+    position: relative;
+    width: 260px;
+    height: 332px;
+    border-radius: 8px;
+}
+
+.card-label {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    bottom: 0;
+    left: 0;
+    width: 120px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 0px 6px 0px 0px;
+}
+
+.card-label__city {
+    color: #042521;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 25px;
+}
+.card-label__country{
+    color: #80918E;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 768px){
+    .destination-block{
+        padding-top: 50px;
+    }
+    .destination-header{
+        flex-direction: column;
+    }
+    .destination-header__link{
+        padding-top: 20px;
+    }
+    .destination-cards{
+        flex-direction: column;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+}

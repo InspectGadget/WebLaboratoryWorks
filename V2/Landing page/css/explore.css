@@ -1,0 +1,48 @@
+.explore{
+    background: #F8F8F8;
+}
+.explore-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 210px;
+    padding-bottom: 240px;
+}
+
+.explore__title {
+    font-weight: 700;
+    line-height: 50px;
+    color: #000000;
+}
+
+.explore__description {
+    max-width: 450px;
+    font-family: 'Muli';
+    font-weight: 300;
+    font-size: 1.0625rem;
+    line-height: 30px;
+    color: #7D7987;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.explore__button {
+    width: 164px;
+    height: 48px;
+    background: #FB8F1D;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    .explore-block{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .explore__image{
+        width: 100%;
+    }
+}

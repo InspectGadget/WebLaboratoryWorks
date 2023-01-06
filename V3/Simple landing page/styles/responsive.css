@@ -57,11 +57,7 @@
     color: #FB8F1D !important;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 668px) {
-
-    .container {
-        max-width: 345px !important;
-    }
+@media screen and (max-width: 768px){
 
     /* Navbar */
     .navbar {
@@ -193,5 +189,13 @@
 
     .footer__copyright {
         text-align: center;
+    }
+}
+@media screen and (max-width:1024px) {
+    .container {
+        padding: 0 40px;
+    }
+    .navbar__link:not(:last-child){
+        padding-right: 5px;
     }
 }

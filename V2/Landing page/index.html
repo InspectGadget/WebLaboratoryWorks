@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore and Travel</title>
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="hero">
+        <div class="container">
+            <header class="header">
+                <img src="./images/logo.svg" alt="" class="header__logo">
+                <nav id="header-menu" class="header-menu">
+                    <ul>
+                        <li class="header-menu__item"><a href="http://"
+                                class="header-menu__link header-menu__link_active">Home</a></li>
+                        <li class="header-menu__item"><a href="http://" class="header-menu__link">Destination</a></li>
+                        <li class="header-menu__item"><a href="http://" class="header-menu__link">About</a></li>
+                        <li class="header-menu__item"><a href="http://" class="header-menu__link">Partner</a></li>
+                    </ul>
+                    <button class="header-menu__button header-menu__button_transparent">Login</button>
+                    <button class="header-menu__button header-menu__button_filled">Register</button>
+                </nav>
+                <div class="header-menu__button_mobile" onclick="toggleMenu()"><img src="images/hamburger.svg" alt=""></div>
+            </header>
+            <div class="hero-block">
+                <div class="hero-content">
+                    <h1 class="hero__title title">Explore and Travel</h1>
+                    <span class="hero__label">Holiday finder</span>
+                    <hr class="hero__line">
+                    <div class="hero-selectors">
+                        <div class="hero-selectors__row">
+                            <div class="hero__selectdiv">
+                                <select name="Location" id="" class="hero__selector">
+                                    <option selected value="Location">Location</option>
+                                </select>
+                            </div>
+                            <div class="hero__selectdiv">
+                                <select name="Activity" id="" class="hero__selector">
+                                    <option selected value="Activity">Activity</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="hero-selectors__row">
+                            <div class="hero__selectdiv">
+                                <select name="Grade" id="" class="hero__selector">
+                                    <option selected value="Grade">Grade</option>
+                                </select>
+                            </div>
+                            <div class="hero__selectdiv">
+                                <select name="Date" id="" class="hero__selector">
+                                    <option selected value="Date">Date</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="hero__button">Explore</button>
+                </div>
+                <img src="./images/thousand-01 1.png" alt="" class="hero__image">
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+        <div class="container">
+            <div class="explore-block">
+                <img src="./images/Thousand-02 1.png" alt="" class="explore__image">
+                <div class="explore-content">
+                    <h2 class="explore__title title">A new way to explore the world </h2>
+                    <p class="explore__description">For decades travellers have reached for Lonely Planet books when
+                        looking to plan and execute their perfect trip, but now, they can also let Lonely Planet
+                        Experiences lead the way</p>
+                    <button class="explore__button">Learn more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="destinations">
+        <div class="container">
+            <div class="destination-block">
+                <div class="destination-header">
+                    <h2 class="destination-header__title title">Featured destinations</h2>
+                    <a href="http://" class="destination-header__link">View all ></a>
+                </div>
+                <div class="destination-cards">
+                    <div class="card" style="background-image: url('./images/image\ 4.png');">
+                        <div class="card-label">
+                            <span class="card-label__city">Raja Ampat</span>
+                            <span class="card-label__country">Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="card"
+                        style="background-image: url('./images/Screen\ Shot\ 2020-02-14\ at\ 4.36\ 1.png');">
+                        <div class="card-label">
+                            <span class="card-label__city">Fanjingshan</span>
+                            <span class="card-label__country">China</span>
+                        </div>
+                    </div>
+                    <div class="card"
+                        style="background-image: url('./images/Screen\ Shot\ 2020-02-15\ at\ 11.04\ 1.png');">
+                        <div class="card-label">
+                            <span class="card-label__city">Vevey</span>
+                            <span class="card-label__country">Switzerland</span>
+                        </div>
+                    </div>
+
+                    <div class="card"
+                        style="background-image: url('./images/Screen\ Shot\ 2020-02-15\ at\ 11.10\ 1.png');">
+                        <div class="card-label">
+                            <span class="card-label__city">Skadar</span>
+                            <span class="card-label__country">Montenegro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-block">
+                <div class="footer__logo">
+                    <img src="images/logo.svg" alt="">
+                </div>
+                <h6 class="footer__copyright">©2020 Thousand Sunny. All rights reserved</h6>
+            </div>
+            <hr class="footer__line">
+            <div class="footer-social">
+                <ul>
+                    <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter icon" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook icon" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram icon"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com"><i class="fa fa-linkedin icon" aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com"><i class="fa fa-youtube-play icon" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 53px;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu ul {
+    display: flex;
+}
+
+.header-menu__item {
+    padding-right: 34px;
+}
+
+.header-menu__link {
+    font-size: 1rem;
+}
+
+.header-menu__link_active {
+    font-weight: 500;
+    color: #202336;
+}
+
+.header-menu__button {
+    width: 132px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 0.9375;
+    border-radius: 8px;
+}
+
+.header-menu__button_transparent {
+    background: transparent;
+    border: 1px solid #FB8F1D;
+    color: #FB8F1D;
+}
+
+.header-menu__button_filled {
+    background-color: #FB8F1D;
+    color: #fff;
+    margin-left: 18px;
+}
+
+.header-menu__button_mobile {
+    display: none;
+    width: 32px;
+    cursor: pointer;
+}
+
+.header-menu__button_mobile>img {
+    max-width: 100%;
+}
+
+.header-menu__button_mobile-icon {
+    width: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        position: fixed;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background-color: #fff;
+        z-index: 10;
+    }
+
+    .header-menu__button_mobile {
+        display: block;
+    }
+
+    .header-menu {
+        flex-direction: column;
+        background: #fff;
+        position: fixed;
+        top: 72px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: 0;
+        clip-path: circle(0 at top);
+        transition: clip-path 0.9s ease-in;
+    }
+
+    .header-menu.open {
+        clip-path: circle(1000px at top);
+    }
+
+    .header-menu ul {
+        flex-direction: column;
+        height: 70%;
+    }
+
+    .header-menu .header-menu__item {
+        margin-right: 0;
+        padding-top: 4vh;
+        flex: 1;
+    }
+
+    .header-menu a {
+        font-weight: 500;
+        display: block;
+        font-size: 20px;
+    }
+
+    .header-menu__item {
+        padding-right: 0;
+    }
+
+    .header-menu__button {
+        margin-left: 0;
+        margin-top: 4vh;
+        background: transparent;
+        color: #505f98;
+        font-size: 20px;
+    }
+}
