@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <title>World ship</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid container">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/icons8-cargo-ship-50.png" alt="Logo" width="30" height="24"
+                        class="d-inline-block align-text-top">
+                    World Ship
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Create ship</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="filter col-3 justify-content-center border-end">
+                <h1>Filters</h1>
+                <hr>
+                <h5 class="text-center">Search</h5>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+                    <input id="find_input" type="text" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="d-grid gap-2  mx-auto">
+                    <button id="find_button" class="btn btn-primary" type="button">Find</button>
+                    <button id="cancel_find_button" class="btn btn-danger" type="button">Cancel</button>
+                </div>
+                <hr class="col-6 mx-auto">
+                <h5 class="text-center">Sort</h5>
+                <div class="form-check form-switch">
+                    <input id="sort_checkbox" class="form-check-input" type="checkbox" role="switch">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Sort by ship capacity </label>
+                </div>
+                <hr class="col-6 mx-auto">
+                <h5 class="text-center">Count weight</h5>
+                <div class="d-grid gap-2  mx-auto">
+                    <button id="count_button" class="btn btn-info" type="button">Count</button>
+                    <div class="float-start">
+                        <span class="d-lg-inline">Total weight: </span>
+                        <span id="count_output" class="d-lg-inline"></span>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-9">
+                <ul id="items_container" class="mt-5 mt-md-2 mx-auto d-flex flex-wrap">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>

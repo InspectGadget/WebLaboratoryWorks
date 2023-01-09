@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <title>Eco Cabins</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/Logo horizontal.svg" alt="Logo" height="26" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Add cabin</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input id="search_input" class="form-control me-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button id="search_button" class="btn btn-success">Search</button>
+                        <button id="cancel_search_button" class="btn btn-danger ms-2" type="button">Cancel</button>
+
+                    </form>
+                    <hr class="col-11 mx-auto">
+
+                    <h5 class="">Count available</h5>
+                    <div class="d-grid gap-2  mx-auto">
+                        <button id="count_button" class="btn btn-success" type="button">Count</button>
+                        <div class="float-start">
+                            <span class="d-lg-inline">Total available: </span>
+                            <span id="count_field" class="d-lg-inline"></span>
+                        </div>
+                    </div>
+                    <hr class="col-11 mx-auto">
+                    <h5 class="">Sort</h5>
+                    <div class="form-check form-switch">
+                        <input id="sort_switch" class="form-check-input" type="checkbox" role="switch">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Sort by price </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <ul id="items_container" class="container d-flex flex-wrap justify-content-between" style="padding-top:5rem">
+    </ul>
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
