@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,72 @@
         crossorigin="anonymous"></script>
     <title>Holiday finder</title>
 </head>
+
 <body>
-    
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                    <a href="/"
+                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Menu</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                        id="menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link align-middle px-0">
+                                <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Create
+                                    trip</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="/"
+                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Search</span>
+                    </a>
+                    <div class="input-group">
+                        <input id="search_input" type="text" class="form-control" placeholder="City">
+                    </div>
+                    <div class="mt-2">
+                        <button id="search_button" class="btn btn-outline-secondary" type="button">Find</button>
+                        <button id="cancel_search_button" class="btn btn-outline-secondary"
+                            type="button">Cancel</button>
+                    </div>
+                    <a href="/"
+                        class="d-flex align-items-center pb-3 mt-4 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-5 d-none d-sm-inline">Filter</span>
+                    </a>
+                    <a
+                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">Sort</a>
+                    <div class="form-check form-switch">
+                        <input id="sort_switch" class="form-check-input" type="checkbox" role="switch">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Sort by price </label>
+                    </div>
+                    <hr class="col-11 mx-auto">
+                    <div class="float-start">
+                        <span class="d-lg-inline">Average days: </span>
+                        <span id="count_field" class="d-lg-inline"></span>
+                    </div>
+                    <hr>
+                    <div class="dropdown pb-4">
+                        <a href="#" class="d-flex align-items-center text-white text-decoration-none">
+                            <img src="./assets/logo.svg" alt="hugenerd" width="30" height="30" class="rounded-circle">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col py-3 bg-body-secondary">
+                <ul id="items_container" class="container d-flex flex-wrap justify-content-around">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./js/index.js"></script>
 </body>
+
 </html>
