@@ -1,7 +1,3 @@
-import {
-    renderItemsList,
-} from "./domUtilities.js";
-import { seedShip } from "./seed.js";
 
 const findButton = document.getElementById("find_button");
 const cancelFindButton = document.getElementById("cancel_find_button");

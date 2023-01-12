@@ -1,6 +1,3 @@
-import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
-
-let ship = [];
 
 function generateName() {
     var result = '';
@@ -12,9 +9,9 @@ function generateName() {
     return result;
 }
 
-export const seedShip = () => {
+const seedShip = () => {
     for (let index = 0; index < 5; index++) {
-        const generatedId = uuidv4();
+        const generatedId = uuid.v1();
         const newItem = {
             id: generatedId,
             name: generateName(),

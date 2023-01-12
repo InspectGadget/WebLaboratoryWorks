@@ -1,6 +1,3 @@
-import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
-
-let doctors = [];
 
 function generateName() {
     var result = '';
@@ -12,9 +9,10 @@ function generateName() {
     return result;
 }
 
-export const seedDoctors = () => {
+const seedDoctors = () => {
+    let doctorsTmp = [];
     for (let index = 0; index < 7; index++) {
-        const generatedId = uuidv4();
+        const generatedId = uuid.v1();
         const newItem = {
             id: generatedId,
             name: generateName(),
@@ -22,7 +20,7 @@ export const seedDoctors = () => {
             patients: Math.floor(Math.random() * 100),
             experience: Math.floor(Math.random() * 15)
         };
-        doctors.push(newItem);
+        doctorsTmp.push(newItem);
     }
-    return doctors;
+    return doctorsTmp;
 };

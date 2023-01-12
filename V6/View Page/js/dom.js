@@ -22,14 +22,14 @@ const itemTemplate = ({ id, name, price, available, area }) => `
 </li>`;
 
 
-export const addItemToPage = ({ id, name, price, available, area }) => {
+const addItemToPage = ({ id, name, price, available, area }) => {
     itemsContainer.insertAdjacentHTML(
         "afterbegin",
         itemTemplate({ id, name, price, available, area })
     );
 };
 
-export const renderItemsList = (items) => {
+const renderItemsList = (items) => {
     itemsContainer.innerHTML = "";
 
     for (const item of items) {

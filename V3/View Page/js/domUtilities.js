@@ -17,14 +17,14 @@ const itemTemplate = ({ id, name, capacity, fuel, weight }) => `
 </li>`;
 
 
-export const addItemToPage = ({ id, name, capacity, fuel, weight }) => {
+const addItemToPage = ({ id, name, capacity, fuel, weight }) => {
     itemsContainer.insertAdjacentHTML(
         "afterbegin",
         itemTemplate({ id, name, capacity, fuel, weight })
     );
 };
 
-export const renderItemsList = (items) => {
+const renderItemsList = (items) => {
     itemsContainer.innerHTML = "";
 
     for (const item of items) {

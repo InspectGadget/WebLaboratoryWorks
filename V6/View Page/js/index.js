@@ -1,7 +1,3 @@
-import {
-    renderItemsList,
-} from "./dom.js";
-import { seedCabins } from "./seed.js";
 
 const findButton = document.getElementById("search_button");
 const cancelFindButton = document.getElementById("cancel_search_button");
